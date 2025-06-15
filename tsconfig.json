@@ -1,13 +1,18 @@
-// {
-//   "extends": "astro/tsconfigs/strict",
-//   "include": [".astro/types.d.ts", "**/*"],
-//   "exclude": ["dist"]
-// }
 {
-  "extends": "astro/tsconfigs/strict",  // opcional, pero recomendable
+  "extends": "astro/tsconfigs/strict",
+  "include": [
+    ".astro/types.d.ts",
+    "**/*"
+  ],
+  "exclude": [
+    "dist"
+  ],
   "compilerOptions": {
-    "jsxImportSource": "astro",
-    "types": ["astro/client"]           // aquí agregas el paquete de tipos
-  },
-  "include": ["src/**/*.ts", "src/**/*.astro"]
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
 }
