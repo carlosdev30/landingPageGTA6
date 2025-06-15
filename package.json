@@ -1,0 +1,22 @@
+{
+  "name": "landingpagegta6",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "serve": "five-server dist --host 127.0.0.1 --port 5500",
+    "go-live": "pnpm run build && pnpm run serve",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.10",
+    "astro": "^5.9.3",
+    "cally": "^0.8.0",
+    "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "five-server": "^0.4.4"
+  }
+}
